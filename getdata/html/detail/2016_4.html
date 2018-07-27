@@ -1,0 +1,878 @@
+  <!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript" src='../js/content_page.js'></script>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+<title>2016年4月全国法定传染病疫情概况</title>
+<link href="../../xhtml/css/publics.css" type="text/css" rel="stylesheet"/>
+<link href="../../xhtml/css/list.css" type="text/css" rel="stylesheet"/>
+<script src="../../xhtml/js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	if(/Android|iPad|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+		$('#xw_box').find('table').css('width','100%');
+	}	
+})
+</script>
+<script>
+// JavaScript Document	
+function changeSize(n){			
+	txt=document.getElementById("xw_box").getElementsByTagName("span");
+	txt=document.getElementById("xw_box").getElementsByTagName("p");
+	txt2=document.getElementById("xw_box").getElementsByTagName("div");
+	txt3=document.getElementById("xw_box").getElementsByTagName("table");
+	for(i=0;i<txt.length;i++){
+		txt[i].style.fontSize=n;
+	}
+	for(i=0;i<txt2.length;i++){
+		txt2[i].style.fontSize=n;
+	}
+	for(i=0;i<txt3.length;i++){
+		txt3[i].style.fontSize=n;
+	}
+}
+m=0;
+</script>
+</head>
+
+<body>
+<!-----头部----->
+<link rel="stylesheet" type="text/css" href="../../xhtml/css/publics.css">
+<link rel="stylesheet" type="text/css" href="../../xhtml/css/styles.css">
+<div class="header">
+  <div class="bgf5">
+    <div class="w1024 header_t">
+      <span class="header_zfw"><a href="http://www.gov.cn/" target="_blank">中国政府网</a>&nbsp;&nbsp;&nbsp;|</span><span class="header_jbwz"><a href="http://www.12388.gov.cn/" target="_blank">中央国家机关举报网站</a></span>
+      <span class="fl header_date" style=" margin-left:430px;" id=localtime></span></span>
+	  <script type="text/javascript">
+      function showLocale(objD)
+      {
+          var str,colorhead,colorfoot;
+          var yy = objD.getYear();
+          if(yy<1900) yy = yy+1900;
+          var MM = objD.getMonth()+1;
+          if(MM<10) MM = '0' + MM;
+          var dd = objD.getDate();
+          if(dd<10) dd = '0' + dd;
+          var hh = objD.getHours();
+          if(hh<10) hh = '0' + hh;
+          var mm = objD.getMinutes();
+          if(mm<10) mm = '0' + mm;
+          var ss = objD.getSeconds();
+          if(ss<10) ss = '0' + ss;
+          var ww = objD.getDay();
+          if  ( ww==0 )  colorhead="<font>";
+          if  ( ww > 0 && ww < 6 )  colorhead="<font>";
+          if  ( ww==6 )  colorhead="<font>";
+          if  (ww==0)  ww="星期日";
+          if  (ww==1)  ww="星期一";
+          if  (ww==2)  ww="星期二";
+          if  (ww==3)  ww="星期三";
+          if  (ww==4)  ww="星期四";
+          if  (ww==5)  ww="星期五";
+          if  (ww==6)  ww="星期六";
+          colorfoot="</font>"
+          str = colorhead + yy + "年" + MM + "月" + dd + "日 "+ ww +  colorfoot;
+          return(str);
+      }
+      function tick()
+      {
+          var today;
+          today = new Date();
+          document.getElementById("localtime").innerHTML = showLocale(today);
+          window.setTimeout("tick()", 1000);
+      }
+      tick();
+      </script>
+      <form action="http://so.nhfpc.gov.cn/?siteCode=N000001643" method="post" target="_blank" id="form1" name="form1" class="fr">
+	  <!--<input type="hidden" name="database" value="" id="database">-->
+	  <!--<input type="hidden" name="siteCode" id="siteCode" value="bm15000008">-->
+    	<div style=" width:203px; height:25px; border:1px solid #dfdfdf; background:#fff; margin-top:3px;">
+          <input name="qt" id="qt" class="srk_1 left" type="text" value="--请输入关键字--" onfocus="if(this.value==this.defaultValue){this.value='';this.style.color=''}" onblur="if(this.value==''){this.value='--请输入关键字--';this.style.color='#999'}" autocomplete="off" style="float:left;height:25px;line-height:25px; width:174px; color:#999; border:0px; padding-left:5px;">
+          <input class="fl" style="height:25px;width:21px;border:0px;background:url(../../xhtml/images/buttom_1.jpg) left center no-repeat; cursor:pointer;" type="submit" name="button" id="button" value="">
+        </div>
+        </form>
+      <div class="clear"></div>
+    </div>
+  </div>
+  <div class="w1024 mt30 mb30"><img src="../../xhtml/images/logo.png" height="67" /></div>
+  <div class="bg05">
+    <div class="header_nav w1024">
+     <ul>
+      <li><a href="../../../zhuz/index.shtml" target="_blank">主站首页</a></li>
+      <li><span>|</span><a href="../../../jkj/new_index.shtml" target="_parent">首页</a></li>
+      <li><span>|</span><a href="../../../jkj/pqt/new_list.shtml" target="_parent">最新信息</a></li>
+      <li><span>|</span><a href="../../../jkj/zcwj2/new_zcwj.shtml" target="_parent">政策文件</a></li>
+      <li><span>|</span><a href="../../../jkj/pgzdt/new_list.shtml" target="_parent">工作动态</a></li>
+      <li><span>|</span><a href="../../../jkj/pzfxxgk/gywm.shtml" target="_parent">关于我们</a></li>
+      <li><span>|</span><a href="../../../jkj/ptpxw/new_list.shtml" target="_parent">图片集锦</a></li>
+      <li class="w124"><span>|</span><a href="../../../jkj/pztq/new_list.shtml" target="_parent">专题专栏</a></li>
+      <div class="clear"></div>
+     </ul>
+    </div>
+  </div>
+</div>
+<!--头部结束-->
+<!-----列表----->
+<div class="w1024 mb50">
+    <div class="index_title">
+            <h3 class="index_title_h3 fl">动态</h3>
+            <div class="fr loc">您现在所在位置： 
+<a href='../../../jkj/new_index.shtml'  target="_parent">首页</a>&nbsp;>&nbsp;<a href='../../../jkj/pqt/new_list.shtml'  target="_parent">最新信息</a>&nbsp;>&nbsp;<a href='../../../jkj/s2907/new_list.shtml'  target="_parent">传染病预防控制</a>&nbsp;>&nbsp;<a href='../../../jkj/s3578/new_list.shtml'  target="_parent">动态</a>
+</div>
+            <div class="clear"></div>
+    </div>
+    <div class="list">
+        <div class="tit">2016年4月全国法定传染病疫情概况</div>
+        <div class="source">
+        	<div class="fr"><span><A href="#" onclick="changeSize('16px');return false;"><img src="../../xhtml/images/sm.jpg" /></A></span><span><A href="#" onclick="changeSize('20px');return false;"><img src="../../xhtml/images/big.jpg" /></A></span><span><A href="javascript:window.print()"><img src="../../xhtml/images/dys.jpg" /></A></span></div>
+            <span>发布时间：
+            	2016-05-11
+            </span>
+            <!--<span class="mr">来源:
+            	
+            </span>
+            <span class="mr">阅读量：12</span>-->
+            
+            <div class="clear"></div>
+        </div>
+        <div class="con" id="xw_box">
+          <P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">　　2016年4月（2016年4月1日0时至4月30日24时），全国（不含港澳台，下同）共报告法定传染病653680例，死亡1285人。其中，甲类传染病中鼠疫无发病、死亡报告，霍乱报告发病2例，无死亡。乙类传染病中传染性非典型肺炎、脊髓灰质炎、人感染高致病性禽流感和白喉无发病、死亡报告，其余22种传染病共报告发病303684例，死亡1259人。报告发病数居前5位的病种依次为病毒性肝炎、肺结核、梅毒、淋病以及细菌性和阿米巴性痢疾，占乙类传染病报告病例总数的92%。 <BR>　　同期，全国共报告丙类传染病发病349994例，死亡26人，无丝虫病发病、死亡报告。报告发病数居前3位的病种依次为手足口病、其他感染性腹泻病和流行性感冒，占丙类传染病报告病例总数的95％。 </P>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">&nbsp;</P>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">&nbsp;</P>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">附件 </P>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">&nbsp;</P>
+<P style="TEXT-ALIGN: center; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt"><STRONG><FONT style="FONT-FAMILY: 宋体; FONT-SIZE: 22pt">2016年4月全国法定报告传染病发病、死亡统计表</FONT></STRONG></P>
+<P style="TEXT-ALIGN: center; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">&nbsp;</P>
+<P style="TEXT-ALIGN: center; LINE-HEIGHT: 1.5; MARGIN-TOP: 0px; FONT-FAMILY: 仿宋_GB2312; MARGIN-BOTTOM: 0px; FONT-SIZE: 16pt">
+<TABLE style="BORDER-COLLAPSE: collapse" border=0 cellSpacing=0 cellPadding=0>
+<TBODY>
+<TR style="HEIGHT: 22.7pt">
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=center><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">病名</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=center><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">发病数</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: windowtext 1pt solid; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: center; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=center><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">死亡数<SPAN>**</SPAN></SPAN></B></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">甲乙丙类总计</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">653680</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1285</SPAN></B></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 12.05pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">甲乙类传染病合计</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">303686</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1259</SPAN></B></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">鼠疫</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">霍乱</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">传染性非典型肺炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">艾滋病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">4574</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1023</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">病毒性肝炎<SPAN>*</SPAN></SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">121151</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">42</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 36pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">甲型肝炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2063</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 36pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">乙型肝炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">93190</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">30</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 36pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">丙型肝炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">20695</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">12</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 36pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">丁型肝炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">41</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 36pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">戊型肝炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2927</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 36pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">未分型肝炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2235</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">脊髓灰质炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">人感染高致病性禽流感</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">麻疹</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">5488</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">3</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">流行性出血热</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">699</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">狂犬病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">29</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">24</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">流行性乙型脑炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">3</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">登革热</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">33</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">炭疽</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">15</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">细菌性和阿米巴性痢疾</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">7756</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">肺结核</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">103397</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">148</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">伤寒和副伤寒</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">881</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">流行性脑脊髓膜炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">14</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">百日咳</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">433</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">白喉</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">新生儿破伤风</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">15</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">猩红热</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">4955</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">布鲁氏菌病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">5401</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">淋病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">8510</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">梅毒</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">39715</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">6</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">钩端螺旋体病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">6</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">血吸虫病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">294</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">疟疾</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">304</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">人感染<SPAN>H7N9</SPAN>禽流感</SPAN></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">11</SPAN></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">7</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 12.05pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">丙类传染病合计</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">349994</SPAN></B></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><B><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">26</SPAN></B></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">流行性感冒</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">47530</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">8</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">流行性腮腺炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">13837</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">风疹</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1183</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">急性出血性结膜炎</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">2835</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">麻风病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">76</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">斑疹伤寒</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">63</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">黑热病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">26</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">包虫病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">398</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">丝虫病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">0</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">其他感染性腹泻病</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">57616</SPAN></P></TD>
+<TD style="PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">1</SPAN></P></TD></TR>
+<TR style="HEIGHT: 22.7pt">
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 168.45pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" vAlign=top width=225>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: left; LINE-HEIGHT: 16pt; TEXT-INDENT: 24pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=left><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">手足口病</SPAN></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 115.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" width=154>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">226430</SPAN></P></TD>
+<TD style="BORDER-BOTTOM: windowtext 1pt solid; BORDER-LEFT: medium none; PADDING-BOTTOM: 0cm; PADDING-LEFT: 5.4pt; WIDTH: 146.6pt; PADDING-RIGHT: 5.4pt; HEIGHT: 22.7pt; BORDER-TOP: medium none; BORDER-RIGHT: medium none; PADDING-TOP: 0cm" vAlign=top width=195>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: right; LINE-HEIGHT: 16pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt" align=right><SPAN style="FONT-FAMILY: 仿宋_GB2312; COLOR: black; FONT-SIZE: 12pt">16</SPAN></P></TD></TR></TBODY></TABLE>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 12pt; TEXT-INDENT: 5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt"><SPAN style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 10pt">注：<SPAN>*</SPAN></SPAN><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 10pt">&nbsp;</SPAN><SPAN style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 10pt"> </SPAN><SPAN style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 10pt">病毒性肝炎的发病数、死亡数为甲型肝炎、乙型肝炎、丙型肝炎、丁型肝炎、戊型肝炎、未分型肝炎报告发病数、死亡数的合计；</SPAN></P>
+<P style="TEXT-JUSTIFY: inter-ideograph; TEXT-ALIGN: justify; LINE-HEIGHT: 12pt; TEXT-INDENT: 5pt; MARGIN: 0cm 0cm 0pt; FONT-FAMILY: 'Calibri','sans-serif'; FONT-SIZE: 10.5pt"><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 10pt">&nbsp;&nbsp;&nbsp;</SPAN><SPAN style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 10pt"> **</SPAN><SPAN style="FONT-FAMILY: 'Times New Roman','serif'; FONT-SIZE: 10pt">&nbsp;</SPAN><SPAN style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 10pt"> </SPAN><SPAN style="FONT-FAMILY: 仿宋_GB2312; FONT-SIZE: 10pt">通过传染病网络直报系统报告的死亡数据不作为中国传染病死因顺位依据。</SPAN></P>&nbsp;
+          <div class="fx fr">
+            <div class="bdsharebuttonbox fr">
+            <a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_qzone" data-cmd="qzone"></a><a href="#" class="bds_tsina" data-cmd="tsina"></a><a href="#" class="bds_tqq" data-cmd="tqq"></a><a href="#" class="bds_renren" data-cmd="renren"></a><a href="#" class="bds_weixin" data-cmd="weixin"></a>
+            </div>
+                <script>
+                window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdPic":"","bdStyle":"0","bdSize":"16"},"share":{},"image":{"viewList":["qzone","tsina","tqq","renren","weixin"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                </script>
+                分享到&nbsp;&nbsp;
+          </div>
+          <div class="clear"></div>
+        </div>
+    </div>
+    
+</div>
+
+<!------底部------>
+<link rel="stylesheet" type="text/css" href="../../xhtml/css/publics.css">
+<link rel="stylesheet" type="text/css" href="../../xhtml/css/styles.css">
+<div class="footer">
+ <div class="footer_con w1024">
+   <div class="footer_con_t">
+     <select name="委机关" class="footer_sel mr20" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0;this.selectedIndex=0">
+       <option>委机关</option>
+       
+       <option value="../../../bgt/new_index.shtml">办公厅</option> 
+       <option value="../../../renshi/new_index.shtml">人事司</option>
+       <option value="../../../guihuaxxs/new_index.shtml">规划与信息司</option>
+       <option value="../../../caiwusi/new_index.shtml">财务司</option>
+       <option value="../../../fzs/new_index.shtml">法制司</option>
+       
+       <option value="../../../tigs/new_index.shtml">体制改革司</option> 
+       <option value="../../../yjb/new_index.shtml">卫生应急办公室</option>
+       <option value="../../../jkj/new_index.shtml">疾病预防控制局</option>
+       <option value="../../../yzygj/new_index.shtml">医政医管局</option>
+       <option value="../../../jws/new_index.shtml">基层卫生司</option>
+       
+       <option value="../../../fys/new_index.shtml">妇幼健康服务司</option> 
+       <option value="../../../sps/new_index.shtml">食品安全标准与监测评估司</option>
+       <option value="../../../zhjcj/new_index.shtml">综合监督局</option>
+       <option value="../../../yaozs/new_index.shtml">药物政策与基本药物制度司</option>
+       <option value="../../../jczds/new_index.shtml">计划生育基层指导司</option>
+       
+       <option value="../../../jtfzs/new_index.shtml">计划生育家庭发展司</option> 
+       <option value="../../../ldrks/new_index.shtml">流动人口计划生育服务管理司</option>
+       <option value="../../../xcs/new_index.shtml">宣传司</option>
+       <option value="../../../qjjys/new_index.shtml">科技教育司</option>
+       <option value="../../../gjhzs/new_index.shtml">国际合作司</option>
+       
+       <option value="../../../jgdw/new_index.shtml">机关党委</option> 
+       <option value="../../../ltj/new_index.shtml">离退休干部局</option>
+       <option value="../../../jcj/new_index.shtml">驻委纪检组监察局</option>
+     </select>
+     <select name="地方卫生计生部门" class="footer_sel mr20" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0;this.selectedIndex=0">
+       <option>地方部门</option> 
+
+		<option value="http://www.bjchfp.gov.cn/">	北京市卫生计生委	</option> 
+
+		<option value="http://www.tjwsj.gov.cn">	天津市卫生计生委	</option> 
+
+		<option value="http://www.hebwsjs.gov.cn/index.do?templet=index">	河北省卫生计生委	</option> 
+
+		<option value="http://www.sxwsjs.gov.cn/">	山西省卫生计生委	</option> 
+
+		<option value="http://www.nmgwjw.gov.cn/">	内蒙古自治区卫生计生委	</option> 
+
+		<option value="http://www.lndoh.gov.cn/">	辽宁省卫生计生委	</option> 
+
+		<option value="http://wsjsw.jl.gov.cn/">	吉林省卫生计生委	</option> 
+
+		<option value="http://www.hljhfpc.gov.cn/">	黑龙江省卫生计生委	</option> 
+
+		<option value="http://www.wsjsw.gov.cn/">	上海市卫生计生委	</option> 
+
+		<option value="http://www.jswst.gov.cn/">	江苏省卫生计生委	</option> 
+
+		<option value="http://www.zjwjw.gov.cn/">	浙江省卫生计生委	</option> 
+
+		<option value="http://www.ahwjw.gov.cn/">	安徽省卫生计生委	</option> 
+
+		<option value="http://www.fjhfpc.gov.cn/">	福建省卫生计生委	</option> 
+
+		<option value="http://www.jxhfpc.gov.cn/">												江西省卫生计生委																</option> 
+
+		<option value="http://www.sdwsjs.gov.cn/">	山东省卫生计生委	</option> 
+
+		<option value="http://www.hnwsjsw.gov.cn/">	河南省卫生计生委	</option> 
+
+		<option value="http://www.hbwsjs.gov.cn/">	湖北省卫生计生委	</option> 
+
+		<option value="http://222.247.54.190/">	湖南省卫生计生委	</option> 
+
+		<option value="http://www.gdwst.gov.cn/">	广东省卫生计生委	</option> 
+
+		<option value="http://www.gxws.gov.cn/">	广西壮族自治区卫生计生委	</option> 
+
+		<option value="http://www.wst.hainan.gov.cn/">	海南省卫生计生委	</option> 
+
+		<option value="http://www.cqwsjsw.gov.cn/">	重庆市卫生计生委	</option> 
+
+		<option value="http://www.scwst.gov.cn/">	四川省卫生计生委	</option> 
+
+		<option value="http://www.gzhfpc.gov.cn/">	贵州省卫生计生委	</option> 
+
+		<option value="http://www.pbh.yn.gov.cn/">	云南省卫生计生委	</option> 
+
+		<option value="http://www.sxwjw.gov.cn">	陕西省卫生计生委	</option> 
+
+		<option value="http://www.gsws.gov.cn/">	甘肃省卫生计生委	</option> 
+
+		<option value="http://www.qhwst.gov.cn/">	青海省卫生计生委	</option> 
+
+		<option value="http://www.nxws.gov.cn/">	宁夏回族自治区卫生计生委	</option> 
+
+		<option value="http://www.xjhfpc.gov.cn">	新疆维吾尔自治区卫生计生委	</option> 
+
+		<option value="http://wsj.xjbt.gov.cn/">	新疆生产建设兵团卫生局	</option> 
+
+		<option value="http://jsw.xjbt.gov.cn/">	新疆生产建设兵团人口计生委	</option> 
+
+		<option value="http://www.dlhfpc.dl.gov.cn/">	大连市卫生计生委	</option> 
+
+		<option value="http://www.qdwsjsw.gov.cn:7001/home">	青岛市卫生计生委	</option> 
+
+		<option value="http://www.nbwjw.gov.cn">	宁波市卫生计生委	</option> 
+
+		<option value="http://www.xmhealth.gov.cn/">	厦门市卫生计生委	</option> 
+
+		<option value="http://www.szhfpc.gov.cn/">	深圳市卫生计生委	</option> 
+
+		<option value="http://www.xzwsjsw.cn/">	西藏自治区卫生计生委	</option> 
+
+     </select>
+     <select name="直属和联系单位" class="footer_sel mr20" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0;this.selectedIndex=0">
+       <option>直属和联系单位</option> 
+
+		<option value="http://www.pumc.edu.cn/">	医科院	</option> 
+
+		<option value="http://www.chinacdc.cn">	疾控中心	</option> 
+
+		<option value="http://www.jdzx.net.cn/">	监督中心	</option> 
+
+		<option value="../../../zhuz/zslxdw/201310/c19b9460637b41918a464a07bb029562.shtml">	药具管理中心	</option> 
+
+		<option value="/jgfwzx/new_index.shtml">		机关服务局（中心）		</option> 
+
+		<option value="http://www.cfsa.net.cn/">	食品评估中心	</option> 
+
+		<option value="http://www.bjhmoh.cn/">	北京医院	</option> 
+
+		<option value="http://www.pumch.ac.cn/">	北京协和医院	</option> 
+
+		<option value="http://www.zryhyy.com.cn/">	中日医院	</option> 
+
+		<option value="../../../zhuz/zslxdw/201612/c79a086c2fb747fe85490ae05c0c782a.shtml">	科研所	</option> 
+
+		<option value="http://www.nihe.org.cn/">	健康教育中心	</option> 
+
+		<option value="http://www.cpcc1979.org.cn/cn/">	宣教中心	</option> 
+
+		<option value="/mohwsbwstjxxzx/new_index.shtml">		统计信息中心		</option> 
+
+		<option value="http://www.otcmoh.org.cn/">	干部培训中心（党校）	</option> 
+
+		<option value="http://www.nhei.cn/">	卫生发展中心	</option> 
+
+		<option value="http://www.cpdrc.org.cn/">	人发中心	</option> 
+
+		<option value="http://cps.moh.gov.cn/">	项目监管中心	</option> 
+
+		<option value="http://www.niha.org.cn:8089/hwaciis/">												医管中心																</option> 
+
+		<option value="http://www.nmec.org.cn/">	医学考试中心	</option> 
+
+		<option value="http://www.niha.org.cn">	医院研究所	</option> 
+
+		<option value="http://www.ihecc.org/">	国际交流中心	</option> 
+
+		<option value="http://www.21wecan.com/">												人才交流服务中心																</option> 
+
+		<option value="http://nccd.org.cn/">	心血管中心	</option> 
+
+		<option value="http://www.dcmst.org.cn/">																												科技发展中心																										</option> 
+
+		<option value="http://www.rkrc.cn/">												继续教育中心																</option> 
+
+		<option value="../../../zhuz/zslxdw/201612/742e9c29cfe746b9a2846e08ea76708c.shtml">	癌症中心	</option> 
+
+		<option value="http://www.nhfpcpcdc.org.cn/homePage/homePage">	人口文化中心	</option> 
+
+		<option value="http://www.ldrk.org.cn/">	流动人口中心	</option> 
+
+		<option value="http://www.nitc.org.cn/">	南京培训中心	</option> 
+
+		<option value="http://jiating.org.cn/hCenter/Default.aspx">	家庭保健中心	</option> 
+
+		<option value="http://www.chinafpa.org.cn/">	计生协会	</option> 
+
+		<option value="http://www.cma.org.cn/">	医学会	</option> 
+
+		<option value="http://www.cpma.org.cn/">	预防医学会	</option> 
+
+		<option value="http://www.cpwf.org.cn/">	人口基金会	</option> 
+
+		<option value="http://www.cnpca.cn/">	文化促进会	</option> 
+
+		<option value="http://www.cpaw.org.cn/">	人口学会	</option> 
+
+		<option value="http://www.jkb.com.cn/">	健康报社	</option> 
+
+		<option value="/zhuzhan/zsylxdw/201310/99a6db8b2bd6420a80444d06edffa45e.shtml">	人口报社	</option> 
+
+		<option value="http://www.pmph.com/">	人卫社	</option> 
+
+		<option value="http://www.rkcbs.net/">	人口出版社	</option> 
+
+		<option value="http://www.renshengchina.com/">	人生杂志社	</option> 
+
+		<option value="http://www.amchs.cn/">	妇幼健康研究会	</option> 
+
+     </select>
+     <select name="业务主管社会组织" class="footer_sel mr20" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0;this.selectedIndex=0">
+       <option>业务主管社会组织</option> 
+
+		<option value="../../../zhuz/shtt/201706/f7b595939a1a49c9864aa92c9c3986e7.shtml">	中德医学协会	</option> 
+
+		<option value="../../../zhuz/shtt/201706/636590fb92864b5e9a3568fd5e0dc1ab.shtml">	北京协和医学院校友会	</option> 
+
+		<option value="../../../zhuz/shtt/201706/7458d9b373384d828f72bc71ae95c078.shtml">	中国医药卫生文化协会	</option> 
+
+		<option value="../../../zhuz/shtt/201706/27405128ba88470eb309477e868afc35.shtml">	中国人口文化促进会	</option> 
+
+		<option value="../../../zhuz/shtt/201706/7c6b23d52db0493697ee94b17aaa15d7.shtml">	中国人口学会	</option> 
+
+		<option value="../../../zhuz/shtt/201706/3d8cdc3c90cd42d2a10df0a862d55c18.shtml">	中国生殖健康产业协会	</option> 
+
+		<option value="../../../zhuz/shtt/201706/0ac26f62022343bb8879677becd3db50.shtml">	中华口腔医学会	</option> 
+
+		<option value="../../../zhuz/jjh/201706/cac80feeb10b444686596945672c4d8f.shtml">	中国人口福利基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201511/d05ac9bc8a3a409e87f3e4eeb8632178.shtml">	中国出生缺陷干预救助基金会	</option> 
+
+		<option value="../../../zhuz/shtt/201412/d5b5c4eaecd64e79af15d40ae01fe4b6.shtml">	妇幼健康研究会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/a5a22074319e4909aa674eb5164d2a02.shtml">	中国生命关怀协会	</option> 
+
+		<option value="../../../zhuz/qtdw/201304/a4f7112f20c94f779caebe06a145a41d.shtml">		新探健康发展研究中心		</option> 
+
+		<option value="../../../zhuz/jjh/201304/8c4a6aca74f440b9855f4f0f003ae0d1.shtml">	马海德基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/03e7abb2c9e646dd80fe867875363b95.shtml">	吴阶平医学基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/f05b2ef4951b476c97fc2c4c27620987.shtml">		中华国际医学交流基金会		</option> 
+
+		<option value="../../../zhuz/jjh/201304/9798ec130a0240b3b712eed59933bbef.shtml">		中华健康快车基金会		</option> 
+
+		<option value="../../../zhuz/jjh/201304/25abc0408f964083b23c89710cc20acd.shtml">	中国牙病防治基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/b4e5a82c93064fbb8fdb7042e806ccd8.shtml">		中国初级卫生保健基金会		</option> 
+
+		<option value="../../../zhuz/jjh/201304/d7833be48bfc47da9e22f35f7548382d.shtml">		中国医学基金会		</option> 
+
+		<option value="../../../zhuz/jjh/201304/a4e504b2949c4bf7a572e2fc97fb7d17.shtml">		中国医药卫生事业发展基金会		</option> 
+
+		<option value="../../../zhuz/jjh/201304/8e938e574034499d898c4d286aacc6e8.shtml">		中国肝炎防治基金会		</option> 
+
+		<option value="../../../zhuz/jjh/201304/79e10f93e8674611a3a1317346f94197.shtml">	中国健康促进基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/4a07177c1bfe4510aad639ca39ebcc1f.shtml">	中国预防性病艾滋病基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/ae3d3c98a838488c9c2035148cb024c4.shtml">	中国器官移植发展基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/14ed838c588945568f67980f7f540b2c.shtml">	中国癌症基金会	</option> 
+
+		<option value="../../../zhuz/jjh/201304/513637a7fbd8498db168436bf40b2a59.shtml">		中国听力医学发展基金会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/577e59358dd54ac2b5e6bc92a165d887.shtml">	中国医疗保健国际交流促进会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/7d4ef0b78c2e4ae78fd3d63532d13b11.shtml">		全国卫生产业企业管理协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/6f2d1cc1a69047779b73a9010f517202.shtml">		中国医师协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/8c265ae24a7b4786bd50f95fa32245c7.shtml">	中国老年保健医学研究会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/0bdb91c565264456ad6c1816385fc277.shtml">	中国妇幼保健协会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/8d2c4bc92f5942f7b5480ea820107081.shtml">	中国地方病协会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/e3a6d231aa7841c0a421e4251ea475d4.shtml">		中国优生科学协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/d0dd561511ac42f888c9ace60e07db01.shtml">		中国农村卫生协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/48fb4d68ab634d2594e36c4122a4f908.shtml">		中国优生优育协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/1cb070b3fef8492b9ecbd3061600bcc4.shtml">		中国民族卫生协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/348140d2ab6e4f14a6b128aba73e5ab4.shtml">		中国水利电力医学科学技术学会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/1dd2825ab17541698073a03386248dd9.shtml">	中国卫生摄影协会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/8270b6066c384d8c86dea87d6468e483.shtml">		中国卫生监督协会		</option> 
+
+		<option value="http://www.zwjszgc.org.cn/">		中国卫生计生思想政治工作促进会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/812c9000897c467db0e3e6b796d3e2c9.shtml">		中国卫生经济学会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/9444ed91524c48f79d4075966bd48763.shtml">		中日医学科技交流协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/641abb1b48ee431e9e8b2b38ac4d5850.shtml">		海峡两岸医药卫生交流协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/0a8a2b42b80b4340ac225af1895efb72.shtml">		中国医学救援协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/d97817ce19b04de284a7f5f4480931c3.shtml">	中国卫生信息学会	</option> 
+
+		<option value="../../../zhuz/shtt/201304/31b114f9c1134bfea035926df553931b.shtml">		中国老年保健协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/624543f2e70e4b19b9fe363b9c78dd34.shtml">		中国整形美容协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/f508408ea3594ec082500260f905c902.shtml">		中国卫生有害生物防制协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/411524145cc24a7dbad9db0ed7a7551d.shtml">		中国输血协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/3424cbcb430a40948c97135d7d0b7d98.shtml">		中国控制吸烟协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/210629fcf6a64696a8c057f8cc04210f.shtml">		中国健康促进与教育协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/3f885f488e244c7590f4f6582c48ab2c.shtml">		中国药物滥用防治协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/7585794e41ea43b0855ef65dda3b5add.shtml">		中国保健协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/9c7bc2c51bc046629960128f35d285a5.shtml">		中国性病艾滋病防治协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/fc25cd5e6bd141a4b3a56d71744674b4.shtml">		中国性学会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/88ba3196442f4335a6c7c868a1aa7035.shtml">		中国学生营养与健康促进会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/a756ff07d61f4196805cdc670beb2115.shtml">		中国足部反射区健康法研究会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/f021b426727a413d97b83d38b54b3b75.shtml">		中国社区卫生协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/9e9837e903e24c57b5dadbfc44988fb7.shtml">		中国抗癫痫协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/7d4178d76fea428b8aab44a764ab443f.shtml">		中国医院协会		</option> 
+
+		<option value="../../../zhuz/shtt/201304/c1ffb1fdb93049b08700690517d9a32c.shtml">		中国医学影像技术研究会		</option> 
+
+     </select>
+     
+     <select name="相关链接" class="footer_sel" onchange="javascript:window.open(this.options[this.selectedIndex].value);this.selectedIndex=0;this.selectedIndex=0">
+       <option>相关链接</option> 
+       <option value="http://www.gov.cn/">中国政府网</option>
+       <option value="http://dangjian.people.com.cn/GB/136058/399081/index.html">学用习总书记讲话成果</option>
+       <option value="http://zygjjg.12388.gov.cn/">中央国家机关举报电话</option>
+       <option value="http://www.who.int/zh/">世界卫生组织</option>
+       <option value="http://www.unfpa.org/">联合国人口基金</option>
+       <option value="http://www.unicefchina.org/cn/">联合国儿童基金会</option>
+     </select>
+     <div class="clear"></div>
+   </div>
+   <div class="footer_con_t mt20 mb20">
+     <div class="footer_gh fl mt10"><img src="../../xhtml/images/logo_foot.png" /></div>
+     <div class="fl footer_nav ml25 mt10">
+       <span><a href="../../../jkj/plxfs/lists.shtml" target="_blank">联系方式</a><a href="../../../zhuz/wzdt/wzdt.shtml" target="_blank">&nbsp;&nbsp;|&nbsp;&nbsp;网站地图</a></span>
+       <p class="mb5 mt5">地址：北京市西城区西直门外南路1号　邮编：100044　电话：010-68792114</p>   
+       <p class="mb5 mt5">中华人民共和国国家卫生健康委员会&nbsp;&nbsp;&nbsp;&nbsp;版权所有，不得非法镜像． ICP备案编号：京ICP备11020874</p>      <p>技术支持：国家卫生健康委员会统计信息中心</p>  
+     </div>
+     <div class="fr">
+      <script id="_jiucuo_" sitecode='bm24000006' src='http://pucha.kaipuyun.cn/exposure/jiucuo.js'></script>
+<a href="../../../zhuz/wbwx/201306/968dbb2edccd43958e2a16c34c97cd01.shtml" target="_blank"><img src="../../xhtml/images/jkzg.png" /> <img src="../../xhtml/images/ewm.png" /></a>
+
+     </div>
+     <div class="clear"></div>
+   </div>   
+ </div>
+</div>
+<script type="text/javascript" src="http://static.gridsumdissector.com/js/Clients/GWD-800397-418A9C/gs.js"></script>
+</body>
+</html>
